@@ -27,3 +27,13 @@ This was a complex project for me. I subdivided the project into -
  12. Also worked on UV index display based on its value at <2 , 2-8 or above 8. This toook effort. Google and you tube helped !! 
 
  NOTE: I had to create this new repository for this project/assignment that i built initially in January 2022 and later upadetd over last 3 days by adding local storage and UV index display. But for some unkown reason it doesn't redeploy on the github pages. I made multiple attemps with evry possible solution that I could find. But nothing worked. All my detailed work is in the other repository listed in my github page - SunCloudy-Weather-Dashboard. At this time I had no choice but to create new repository and take all my code from old repository. Someday in future I will try to learn and correct the old repo. 
+
+
+ Final version of my weather dashboard looks like this: 
+
+
+The url for my deployed website is: 
+
+
+The url for my gitHub repository is: 
+
