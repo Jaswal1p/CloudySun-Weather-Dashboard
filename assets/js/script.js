@@ -211,3 +211,9 @@ searchForm.addEventListener("submit", (event) => {
         cityNameInput.value = "";
     }
 });
+
+// Called at run time to populate search buttons for previous searches in localStorage
+updateSearchHistory();
+
+// Default city to display at run time
+callOpenWeather("Hartford");
