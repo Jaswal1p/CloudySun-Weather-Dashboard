@@ -189,3 +189,25 @@ const updateLocalStorage = (city) => {
         updateSearchHistory();
     }
 }
+
+// Adds event listener to search form
+searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    // Removes white space from both ends of search term
+    let searchValue = cityNameInput.value.trim("");
+
+    // Handler if user submits form with blank field
+    if (searchValue === "") {
+        currentConditionsH3.textContent = "Please enter a city!";
+        currentConditionsUl.innerHTML = "";
+        dailyCardContainer.innerHTML = "";
+        // Hides 5-day forecast if API won't be called
+        fiveDayHeader.classList.add("hidden");
+    } else {
+        // Calls API to fetch provided value
+        callOpenWeather(searchValue);
+        // Clears text in input
+        cityNameInput.value = "";
+    }
+});
