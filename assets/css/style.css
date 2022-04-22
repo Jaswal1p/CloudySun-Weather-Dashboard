@@ -1,0 +1,41 @@
+/* Base styles for document */
+body {
+    line-height: 1.5;
+  }
+  
+  /* Toggle class for script.js */
+  .hidden {
+    display: none;
+  }
+
+  
+.btn-info {
+    color: #fff;
+    background-color: rgb(11, 127, 223);
+    border-color: #051619;
+}
+
+.btn-light {
+    color: #212529;
+    background-color: grey;
+    border-color: #f8f9fa;
+    width: 250px;
+}
+  
+  /* Header background */
+  .navbar {
+    background: linear-gradient(to right, rgb(21, 85, 202), rgb(20, 5, 102));
+    
+  }
+  
+  /* h1 styles */
+  .navbar .center {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .bg-info {
+    background-color: rgb(4, 4, 61)!important;
+}
