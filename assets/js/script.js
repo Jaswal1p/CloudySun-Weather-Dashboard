@@ -9,3 +9,22 @@ const fiveDayHeader = document.querySelector("#five-day");
 
 // Declares localCityArray in global variable
 const localCityArray = [];
+
+
+// Pulls in previous searches from localStorage
+let previousSearch = JSON.parse(localStorage.getItem("searches"));
+
+
+
+// Removes any null results stored in localStorage
+if (previousSearch !== null) {
+    for (let i = 0; i < previousSearch.length; i++) {
+        if (previousSearch[i] === null) {
+            previousSearch.splice(i, i+1);
+        } else {
+            // Populates localCityArray to publish previous search buttons
+            localCityArray.push(previousSearch[i]);
+        }
+    }
+}
+
