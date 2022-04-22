@@ -34,7 +34,7 @@ This was a complex project for me. I subdivided the project into -
  ![WireFrametoMockup](https://user-images.githubusercontent.com/92233527/164573443-3afaf007-d6de-46ce-95c6-c94ec0e3c056.png)
 
 
-The url for my deployed website is: 
+The url for my deployed website is: https://jaswal1p.github.io/CloudySun-Weather-Dashboard/
 
 
 The url for my gitHub repository is: https://github.com/Jaswal1p/CloudySun-Weather-Dashboard.git
