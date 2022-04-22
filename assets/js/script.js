@@ -174,3 +174,18 @@ const updateSearchHistory = () => {
         }
     }
 }
+
+const updateLocalStorage = (city) => {
+    // Ensures searched city isn't pushed into array (and then localStorage) if city has already been searched
+    if (localCityArray.includes(city)) {
+        return;
+    } else {
+        localCityArray.push(city);
+
+        // Stores for next user visit
+        localStorage.setItem("searches", JSON.stringify(localCityArray));
+        
+        // Calls updateSearchHistory to add new search to previous search buttons
+        updateSearchHistory();
+    }
+}
